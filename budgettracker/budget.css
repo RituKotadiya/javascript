@@ -1,0 +1,48 @@
+.text
+{
+    text-align: center;
+    font-size: 20px;
+}
+.box
+{
+    text-align: center;
+    font-size: 20px;
+  
+}
+.row
+{
+      text-align: center;
+     
+}
+.mainbox{
+    border: 2px solid white;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 50px;
+}
+
+.container
+{
+    border: 2px solid white;
+    padding-top: 30px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    box-shadow: 50px;
+   
+   
+}
+.tex{
+    background-color: chartreuse;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+  
+}
+
+#his{
+    list-style:  none;
+}
