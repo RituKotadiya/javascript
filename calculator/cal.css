@@ -1,0 +1,74 @@
+ button {
+   background: #333333;
+   color: #fff;
+   font-size: 1.5rem;
+   border: none;
+   border-radius: 70%;
+
+   height: 65px;
+   width: 65px;
+ }
+
+ .key-zero {
+
+   width: 133px;
+   border-radius: 30px;
+
+ }
+
+ .key-operate {
+   background: #ff9501;
+ }
+
+ .key-others {
+   background: #a6a6a6;
+   color: #000000;
+ }
+
+
+ .main {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 450px;
+
+ }
+
+ .abc {
+   margin-top: 30px;
+   height: 70px;
+   width: 265px;
+   font-size: 30px;
+
+ }
+
+ .row1 {
+   margin-top: 10px;
+ }
+
+ .row2 {
+   margin-top: 10px;
+ }
+
+ .row3 {
+   margin-top: 10px;
+ }
+
+ .row4 {
+   margin-top: 10px;
+ }
+
+ .row5 {
+   margin-top: 10px;
+ }
+
+ .main1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid black;
+  padding-bottom: 30px;
+  margin-left: 400px;
+  margin-right: 400px;
+  background-color: dimgray
+ }

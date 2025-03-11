@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+    <script src="todo.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+       
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="mainclass">
+            <label for="" class="text"><b>To-Do List</b></label><br>
+            <div class="btn">
+                <!-- <button style="background-color: greenyellow; border-radius: 10px;">Go To Form</button> -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    style="background-color: green; border-radius: 10px;"><b>
+                        Go To Form</b>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Add Task</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <div class="table">
+
+                                    <form action="">
+
+                                        <div class="box">
+                                            <label for="">Name: </label>
+                                            <input type="text" id="name">
+                                        </div><br>
+
+                                        <div class="box">
+                                            <label for="">Task: </label>
+                                            <input type="text" id="task">
+                                        </div> <br>
+
+                                        <div class="box">
+                                            <label for="">Priority: </label>
+                                            <select name="" id="priority">
+                                                <option value="High">High </option>
+                                                <option value="Medium">Medium </option>
+                                                <option value="Low">Low </option>
+                                            </select>
+                                        </div><br>
+
+                                        <div class="box">
+                                            <label for="">Date: </label>
+                                            <input type="date" id="tdate" name="date">
+                                        </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                        onclick="todolist()">Add Task</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="name">
+                        <label for=""><b>Name </b></label>
+                    </div>
+                    <div class="trask">
+                        <label for=""><b>Trask</b></label>
+                    </div>
+                    <div class="priority">
+                        <label for=""><b>Priority </b></label>
+                    </div>
+                    <div class="date">
+                        <label for=""><b>Date</b></label>
+                    </div>
+                </div>
+                <div class="display" id="tasklist" >
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+</body>
+
+</html>

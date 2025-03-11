@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="invoice.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script defer src="invoice.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="details">
+            <form id="invoice-form">
+                <div class="text">
+                    <h2>Invoice Generator</h2>
+                </div>
+                
+                <label>Date: <input type="date" id="date" required></label><br>
+                <label>Name: <input type="text" id="name" required></label><br>
+                <label>Email: <input type="email" id="email" required></label><br>
+                <label>Number: <input type="tel" id="no" required></label><br>
+                <label>Address: <input type="text" id="address" required></label><br>
+                <label>City: <input type="text" id="city" required></label><br>
+
+                <label>Product Detail: <input type="text" id="detail" required></label><br>
+                <label>Product Quantity: <input type="number" id="quality" min="1" required></label><br>
+                <label>Product Price (₹): <input type="number" id="price" min="0" required></label><br>
+                <label>CGST (%): <input type="number" id="cgst" min="0" required></label><br>
+                <label>SGST (%): <input type="number" id="sgst" min="0" required></label><br>
+
+
+                <label>Total Price (₹): <input type="text" id="total" readonly></label><br>
+
+                <div class="btn">
+                    <button type="button" id="generate">Generate PDF</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
